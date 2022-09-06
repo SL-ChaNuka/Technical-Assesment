@@ -17,16 +17,14 @@ class HomeBase extends StatefulWidget {
 class _HomeBaseState extends State<HomeBase> {
   int selectedpage = 0;
 
-
-
   void _onItemTapped(int index) {
     setState(() {
       selectedpage = index;
     });
   }
 
-  final _pageOptions = [
-    ScienceScreen(),
+  final _pageOptions = const[
+     ScienceScreen(),
     BusinessScreen(),
     TechnologyScreen(),
   ];
@@ -42,7 +40,6 @@ class _HomeBaseState extends State<HomeBase> {
     late double sysHeight = MediaQuery.of(context).size.height;
     SystemChrome.setEnabledSystemUIOverlays([]);
     return FlutterEasyLoading(
-      key: Key("HomeBase"),
       child: SafeArea(
         child: Scaffold(
           body: _pageOptions[selectedpage],

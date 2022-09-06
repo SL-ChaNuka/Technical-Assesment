@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons:
   flutter_easyloading:
   font_awesome_flutter:
+  pull_to_refresh:
 
 dev_dependencies:
   flutter_test:
