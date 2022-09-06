@@ -37,10 +37,19 @@ dependencies:
   flutter_easyloading:
   font_awesome_flutter:
   pull_to_refresh:
+  dio:
+  json_serializable:
+  json_annotation:
+  flutter_secure_storage:
+  jwt_decoder:
+  provider:
+
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  build_runner:
+
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
