@@ -415,14 +415,14 @@ class _TechnologyScreenState extends State<TechnologyScreen> {
                         onRefresh: _onRefresh,
                         child: LayoutBuilder(builder:
                             (BuildContext context, BoxConstraints constraints) {
-                          return list!.length > 0
+                          return list.length > 0
                               ? Container(
                             width: sysWidth,
                             height: constraints.maxHeight,
                             child: SingleChildScrollView(
                               child: Column(
                                 children: [
-                                  for (var i = 0; i < list!.length; i++)
+                                  for (var i = 0; i < list.length; i++)
                                     Padding(
                                       padding:
                                       const EdgeInsets.only(top: 8.0),
